@@ -3,3 +3,6 @@
 
 # Export all names
 exportPattern(".")
+
+importFrom("graphics", "abline", "arrows", "axis", "barplot", "box",
+           "hist", "par", "plot", "points", "rect", "text")
