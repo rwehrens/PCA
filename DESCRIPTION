@@ -1,0 +1,10 @@
+Package: PCA
+Type: Package
+Title: PCA functions, based on the PRiNS package
+Version: 0.0.4
+Date: 2018-09-18
+Author: Ron Wehrens
+Maintainer: Ron Wehrens <ron.wehrens@gmail.com>
+Description: PCA functions including plots
+License: GPL (>= 2)
+Packaged: 2010-02-12 09:19:04 UTC; ron
