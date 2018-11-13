@@ -26,8 +26,8 @@
                           \dots)
 screeplot(object, type = c("scree", "percentage"), npc, \dots)
 \method{biplot}{PCA}(x, pc = c(1,2),
-       pcscores = scores(object),
-       pcloadings = loadings(object),
+       pcscores = scores(x),
+       pcloadings = loadings(x),
        show.names = c("none", "scores", "loadings", "both"),
        score.col = 1, loading.col = "blue",
        min.length = .01, varnames = NULL, \dots)

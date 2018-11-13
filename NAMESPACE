@@ -2,7 +2,16 @@
 # Remove the previous line if you edit this file
 
 # Export all names
-exportPattern(".")
+export(PCA, variances, screeplot, reconstruct, project,
+       scoreplot, loadingplot)
+S3method(biplot, PCA)
+S3method(loadingplot, PCA)
+S3method(scoreplot, PCA)
+S3method(loadings, PCA)
+S3method(scores, PCA)
+S3method(loadings, default)
+S3method(scores, default)
+S3method(summary, PCA)
 
 importFrom("graphics", "abline", "arrows", "axis", "barplot", "box",
            "hist", "par", "plot", "points", "rect", "text")
