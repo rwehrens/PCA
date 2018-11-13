@@ -1,6 +1,6 @@
 Package: PCA
 Type: Package
-Title: PCA functions, based on the PRiNS package
+Title: PCA functions from the ChemometricsWithR package
 Version: 0.0.4
 Date: 2018-09-18
 Author: Ron Wehrens
