@@ -134,6 +134,7 @@ loadingplot <- function(object, ...) UseMethod("loadingplot")
 scoreplot.PCA <- function(object, pc = c(1,2),
                           pcscores = scores(object),
                           show.names = FALSE,
+                          show.points = TRUE,
                           xlab, ylab, xlim, ylim, ...)
 {
   if (is.null(varnames <- rownames(pcscores)))
@@ -177,7 +178,7 @@ scoreplot.PCA <- function(object, pc = c(1,2),
   if (show.names) {
     text(pcscores[,pc[1]], pcscores[,pc[2]], varnames, ...)
   } else {
-    points(pcscores[,pc], ...)
+    if (showpoints) points(pcscores[,pc], ...)
   }
 }
 

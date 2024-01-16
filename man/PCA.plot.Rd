@@ -16,7 +16,9 @@
 \usage{
 \method{scoreplot}{PCA}(object, pc = c(1,2),
                         pcscores = scores(object),
-                        show.names = FALSE, xlab, ylab, xlim, ylim,
+                        show.names = FALSE,
+                        show.points = TRUE,
+                        xlab, ylab, xlim, ylim,
                         \dots)
 \method{loadingplot}{PCA}(object, pc = c(1,2),
                           pcloadings = loadings(object),
@@ -51,6 +53,8 @@ screeplot(object, type = c("scree", "percentage"), npc, \dots)
     symbols. For \code{loadingplot} and \code{scoreplot} a logical
     (default: FALSE), for \code{biplot} one of 'scores', 'loadings',
     'both' or 'none' (default).}
+  \item{show.points}{logical, whether to plot any points. If FALSE, only
+    the empty panel is shown, with the correct info on the axes.}
   \item{xlab, ylab, xlim, ylim, col, \dots}{additional graphical arguments
     (see \code{\link{par}}).}
   \item{npc}{how many PCs to show in the scree plot (starting from 1).}
